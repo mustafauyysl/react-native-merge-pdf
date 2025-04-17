@@ -1,6 +1,6 @@
 {
   "name": "react-native-merge-pdf",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React Native package to merge multiple PDF files",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mustafauysal/react-native-merge-pdf.git"
+    "url": "git+https://github.com/mustafauyysl/react-native-merge-pdf.git"
   },
-  "author": "Mustafa Uysal <mustafauysal@users.noreply.github.com>",
+  "author": "Mustafa Uysal <mustafauyysl@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mustafauysal/react-native-merge-pdf/issues"
+    "url": "https://github.com/mustafauyysl/react-native-merge-pdf/issues"
   },
-  "homepage": "https://github.com/mustafauysal/react-native-merge-pdf#readme",
+  "homepage": "https://github.com/mustafauyysl/react-native-merge-pdf#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
