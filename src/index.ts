@@ -1,5 +1,6 @@
 import { NativeModules, Platform } from 'react-native';
 
+
 export interface PDFFile {
   fileCopyUri?: string;
   name?: string;
@@ -8,7 +9,9 @@ export interface PDFFile {
   uri: string;
 }
 
+
 export type ReturnType = 'path' | 'base64';
+
 
 export interface MergePDFOptions {
   files: PDFFile[];
@@ -26,6 +29,7 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
+
 const ReactNativeMergePdf = NativeModules.ReactNativeMergePdf
   ? NativeModules.ReactNativeMergePdf
   : new Proxy(
@@ -38,7 +42,6 @@ const ReactNativeMergePdf = NativeModules.ReactNativeMergePdf
     );
 
 export function mergePDFs(options: MergePDFOptions): Promise<string> {
-  // Default to 'path' if returnType is not provided
   const mergeOptions = {
     ...options,
     returnType: options.returnType || 'path',

@@ -1,6 +1,6 @@
 {
   "name": "react-native-merge-pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native package to merge multiple PDF files",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -29,7 +29,8 @@
     "release": "release-it",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "bootstrap": "yarn example && yarn && yarn pods",
+    "build": "bob build"
   },
   "keywords": [
     "react-native",
@@ -116,5 +117,6 @@
       "module",
       "typescript"
     ]
-  }
+  },
+  "typings": "lib/typescript/index.d.ts"
 } 

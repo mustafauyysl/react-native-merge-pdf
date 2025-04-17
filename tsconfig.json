@@ -1,19 +1,30 @@
 {
     "compilerOptions": {
-      "target": "ES2019",
-      "module": "ESNext",
-      "lib": ["ESNext"],
-      "jsx": "react",
-      "declaration": true,
-      "declarationMap": true,
-      "outDir": "lib/typescript",
-      "rootDir": "src",
-      "strict": true,
+      "baseUrl": "./",
+      "paths": {
+        "react-native-merge-pdf": ["./src/index"]
+      },
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
       "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "jsx": "react",
+      "lib": ["esnext"],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noImplicitUseStrict": false,
+      "noStrictGenericChecks": false,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "resolveJsonModule": true,
       "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
+      "strict": true,
+      "target": "esnext",
+      "declaration": true,
+      "outDir": "lib/typescript"
     },
-    "include": ["src"],
-    "exclude": ["node_modules", "example", "lib"]
+    "include": ["src/**/*"]
   }
   
